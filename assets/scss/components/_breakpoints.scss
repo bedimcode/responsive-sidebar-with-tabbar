@@ -1,0 +1,99 @@
+/*=============== BREAKPOINTS ===============*/
+/* For small devices */
+@media screen and (max-width: 320px){
+    .nav__list{
+        column-gap: 20px;
+    }
+}
+
+/* For medium devices */
+@media screen and (min-width: 576px){
+    .nav__list{
+        width: 332px;
+    }
+}
+
+@media screen and (min-width: 767px){
+    .container{
+        margin-left: 7rem;
+        margin-right: 1.5rem;
+    }
+
+    .nav{
+        position: fixed;
+        left: 0;
+        background-color: var(--container-color);
+        box-shadow: 1px 0 4px hsla(228, 81%, 49%, .15);
+        width: 84px;
+        height: 100vh;
+        padding: 2rem;
+        transition: .3s;
+
+        &__logo{
+            display: flex;
+
+            & i{
+                font-size: 1.25rem;
+                color: var(--first-color);
+            }
+            &-name{
+                color: var(--title-color);
+                font-weight: 600;
+            }
+        } 
+
+    &__logo,
+    &__link{
+        align-items: center;
+        column-gap: 1rem;
+    }
+        &__list{
+            display: grid;
+            row-gap: 2.5rem;
+            margin-top: 10.5rem;
+        }  
+        &__content{
+            overflow: hidden;
+            height: 100%;
+        }
+    
+        &__toggle{
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-color: var(--title-color);
+            color: #fff;
+            border-radius: 50%;
+            font-size: 1.20rem;
+            display: grid;
+            place-items: center;
+            top: 2rem;
+            right: -10px;
+            cursor: pointer;
+            transition: .4s;
+        }
+    }
+}
+
+/* Show menu */
+.show-menu{
+    width: 255px;
+}
+
+/* Rotate toggle icon */
+.rotate-icon{
+    transform: rotate(180deg);
+}
+
+/* For 2K & 4K resolutions */
+@media screen and (min-width: 2048px) {
+    body {
+        zoom: 1.7;
+    }
+}
+  
+@media screen and (min-width: 3840px) {
+    body {
+        zoom: 2.5;
+    }
+}

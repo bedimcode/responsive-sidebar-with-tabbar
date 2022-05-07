@@ -1,0 +1,56 @@
+/*=============== NAV ===============*/
+.container{
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.section{
+    padding: 2rem 0;
+}
+
+.nav{
+    @media screen and (max-width: 767px){
+        &__logo,
+        &__toggle,
+        &__name{
+            display: none;
+        }
+    
+        &__list{
+            position: fixed;
+            bottom: 2rem;
+            background-color: var(--container-color);
+            box-shadow: 0 8px 24px hsla(228, 81%, 24%, .15);
+            width: 90%;
+            padding: 30px 40px;
+            border-radius: 1rem;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            column-gap: 36px;
+            transition: .4s;
+        }
+    }
+    
+    &__link{
+        display: flex;
+        color: var(--text-color);
+        font-weight: 500;
+        transition: .3s;
+
+        & i{
+            font-size: 1.25rem;
+        }
+        &:hover{
+            color: var(--first-color);
+        }
+    }
+}
+
+/* Active link */
+.active-link{
+    color: var(--first-color);
+}
