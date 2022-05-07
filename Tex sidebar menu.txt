@@ -1,0 +1,14 @@
+========== NAV ==========
+.nav__logo-name
+Healthy
+
+.nav__name
+Dashboard
+
+Appointments
+
+Messages
+
+Statistic
+
+Settings
